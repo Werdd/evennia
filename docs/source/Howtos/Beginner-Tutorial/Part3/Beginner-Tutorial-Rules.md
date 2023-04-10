@@ -459,6 +459,8 @@ class EvAdventureRollEngine:
         else:
             # a simple regular list
             roll_result = max(1, min(len(table_choices), roll_result))
+
+
             return table_choices[roll_result - 1]
 ```
 Check that you understand what this does.
