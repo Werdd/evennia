@@ -188,7 +188,7 @@ class EvAdventureCharacter(LivingMixin, DefaultCharacter):
     def at_defeat(self):
         """Characters roll on the death table"""
         if self.location.allow_death:
-            # this allow rooms to have non-lethal battles
+            # this allows rooms to have non-lethal battles
             dice.roll_death(self)
         else:
             self.location.msg_contents(
